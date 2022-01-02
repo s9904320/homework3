@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31911.196
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework3", "homework3\homework3.csproj", "{C4EB1923-5854-47E3-B55D-BFFB3B24BBB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "homework3TestsBandNameGenerator", "homework3TestsBandNameGenerator\homework3TestsBandNameGenerator.csproj", "{9749DCA4-3442-4819-99CC-99741296D4F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4EB1923-5854-47E3-B55D-BFFB3B24BBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4EB1923-5854-47E3-B55D-BFFB3B24BBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4EB1923-5854-47E3-B55D-BFFB3B24BBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4EB1923-5854-47E3-B55D-BFFB3B24BBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9749DCA4-3442-4819-99CC-99741296D4F8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9749DCA4-3442-4819-99CC-99741296D4F8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9749DCA4-3442-4819-99CC-99741296D4F8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9749DCA4-3442-4819-99CC-99741296D4F8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5EE5F367-56ED-42B9-8150-B6850A209CDF}
+	EndGlobalSection
+EndGlobal
