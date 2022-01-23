@@ -13,14 +13,22 @@ namespace homework3.TestsBandNameGenerator
     {
 
         [TestMethod()]
-        public void bandNameGeneratorTestBandNameGenerator()
+        public void bandNameGeneratorForNullOrEmpty()
         {
-            Assert.AreEqual("is null", Class1.bandNameGenerator(""));
-            Assert.AreEqual("is null", Class1.bandNameGenerator(null));
-            Assert.AreEqual("The Knife", Class1.bandNameGenerator("knife"));
-            Assert.AreEqual("Tartart", Class1.bandNameGenerator("tart"));
-            Assert.AreEqual("Sandlesandles", Class1.bandNameGenerator("sandles"));
-            Assert.AreEqual("The Bed", Class1.bandNameGenerator("bed"));
+            Assert.AreEqual("is null", bandName.bandNameGenerator(""));
+            Assert.AreEqual("is null", bandName.bandNameGenerator(null));
+        }
+        [TestMethod()]
+        public void bandNameGeneratorForThe()
+        {
+            Assert.AreEqual("The Knife", bandName.bandNameGenerator("knife"));
+            Assert.AreEqual("The Bed", bandName.bandNameGenerator("bed"));
+        }
+        [TestMethod()]
+        public void bandNameGeneratorForRepleate()
+        {
+            Assert.AreEqual("Tartart", bandName.bandNameGenerator("tart"));
+            Assert.AreEqual("Sandlesandles", bandName.bandNameGenerator("sandles"));
         }
     }
 }

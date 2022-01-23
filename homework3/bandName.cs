@@ -2,7 +2,7 @@
 
 namespace homework3
 {
-    public class Class1
+    public class bandName
     {
         public static string bandNameGenerator(string str)
         {
