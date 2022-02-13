@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace homework3
+namespace bandnamecreater
 {
     public class bandName
     {
@@ -13,20 +13,33 @@ namespace homework3
             else
             {
                 string firstLetter = str.Substring(0, 1);
-                string endLetter = str.Substring(str.Length-1, 1);
+                string lastLetter = str.Substring(str.Length-1, 1);
 
-                if (firstLetter != endLetter)
+                if (firstLetter != lastLetter)
                 {
-                    firstLetter = firstLetter.ToUpper();
-                    str = "The " + firstLetter + str.Substring(1);
+                    str = GetBankNameWithTHE(str, firstLetter);
                 }
                 else
                 {
-                    firstLetter = firstLetter.ToUpper();
-                    str = firstLetter + str.Substring(1) + str.Substring(1);
+                    str = GetBankNameWithRepeat(str,firstLetter);
                 }
             }
 
+            return str;
+        }
+
+        public static string GetBankNameWithTHE(string str,string firstLetter)
+        {
+            firstLetter = firstLetter.ToUpper();
+            str = "The " + firstLetter + str.Substring(1);
+            return str;
+        }
+
+        public static string GetBankNameWithRepeat(string str, string firstLetter)
+        {
+            str += str.Substring(1);
+            firstLetter = firstLetter.ToUpper();
+            str = firstLetter + str.Substring(1);
             return str;
         }
     }
